@@ -1,0 +1,24 @@
+/* ====================
+ * Border
+**/
+.border-none {
+	border: none !important;
+}
+
+
+/* ====================
+ * Cursor
+**/
+.cursor-pointer {
+	cursor: pointer !important;
+}
+
+
+/* ====================
+ * Background Color
+**/
+@each $key, $color in $colorPallete {
+	.bg-color-#{$key} {
+		background-color: $color !important;
+	}
+}
