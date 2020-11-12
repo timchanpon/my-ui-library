@@ -1,0 +1,32 @@
+/* ====================
+ * Absolute Size
+**/
+@for $size from 1 through 1500 {
+	.width-px-#{$size} {
+		width: #{$size}px !important;
+	}
+	.height-px-#{$size} {
+		height: #{$size}px !important;
+	}
+
+	.max-width-px-#{$size} {
+		max-width: #{$size}px !important;
+	}
+}
+
+
+/* ====================
+ * Relative Size
+**/
+@for $size from 1 through 100 {
+	.width-percentage-#{$size} {
+		width: calc(#{$size} * 1%) !important;
+	}
+	.height-percentage-#{$size} {
+		height: calc(#{$size} * 1%) !important;
+	}
+
+	.height-vh-#{$size} {
+		height: calc(#{$size} * 1vh) !important;
+	}
+}
