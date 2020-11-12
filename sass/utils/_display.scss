@@ -1,0 +1,37 @@
+/* ====================
+ * Display
+**/
+$displayValues: block, flex, grid, none;
+
+@each $val in $displayValues {
+	.display-#{$val} {
+		display: $val !important;
+	}
+}
+
+
+/* ====================
+ * Flex
+**/
+$alignItemsValues: start, center, end;
+$justifyContentValues: left, center, right, space-between, space-evenly;
+
+@each $val in $alignItemsValues {
+	.align-items-#{$val} {
+		align-items: $val !important;
+	}
+}
+
+@each $val in $justifyContentValues {
+	.justify-content-#{$val} {
+		justify-content: $val !important;
+	}
+}
+
+.flex-wrap-wrap {
+	flex-wrap: wrap !important;
+}
+
+.flex-direction-column {
+	flex-direction: column !important;
+}
