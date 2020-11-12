@@ -17,8 +17,6 @@
 /* ====================
  * Background Color
 **/
-@import '../vars/colorPallete';
-
 @each $key, $color in $colorPallete {
 	.bg-color-#{$key} {
 		background-color: $color !important;
