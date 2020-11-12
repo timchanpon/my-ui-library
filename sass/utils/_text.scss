@@ -1,4 +1,14 @@
 /* ====================
+ * Text Color
+**/
+@each $key, $color in $colorPallete {
+	.color-#{$key} {
+		color: $color !important;
+	}
+}
+
+
+/* ====================
  * Text Align
 **/
 $textAlignValues: left, center, right;
