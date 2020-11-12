@@ -19,10 +19,10 @@
  * Relative Size
 **/
 @for $size from 1 through 100 {
-	.width-percentage-#{$size} {
+	.width-pct-#{$size} {
 		width: calc(#{$size} * 1%) !important;
 	}
-	.height-percentage-#{$size} {
+	.height-pct-#{$size} {
 		height: calc(#{$size} * 1%) !important;
 	}
 
