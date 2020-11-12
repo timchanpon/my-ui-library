@@ -1,0 +1,12 @@
+{
+	"name": "my-ui-library",
+	"version": "1.0.0",
+	"scripts": {
+		"dev": "node-sass sass/app.scss css/app.css",
+		"watch": "node-sass -w sass/app.scss css/app.css",
+		"prod": "node-sass --output-style compressed sass/app.scss css/app.min.css"
+	},
+	"dependencies": {
+		"node-sass": "^5.0.0"
+	}
+}

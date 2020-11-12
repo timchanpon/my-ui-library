@@ -1,0 +1,9 @@
+version: '3'
+services:
+  node:
+    image: node:12
+    container_name: my-ui-lib
+    volumes:
+      - .:/usr/src
+    working_dir: /usr/src
+    tty: true
