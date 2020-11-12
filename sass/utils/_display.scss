@@ -35,3 +35,44 @@ $justifyContentValues: left, center, right, space-between, space-evenly;
 .flex-direction-column {
 	flex-direction: column !important;
 }
+
+
+/* ====================
+ * Overflow
+**/
+$overflowValues: auto, hidden, scroll;
+
+@each $val in $overflowValues {
+	.overflow-#{$val},
+	.overflow-x-#{$val} {
+		overflow-x: $val !important;
+	}
+
+	.overflow-#{$val},
+	.overflow-y-#{$val} {
+		overflow-y: $val !important;
+	}
+}
+
+
+/* ====================
+ * Images
+**/
+$objectFitValues: contain, cover;
+
+@each $val in $objectFitValues {
+	.object-fit-#{$val} {
+		object-fit: $val !important;
+	}
+}
+
+
+/* ====================
+ * Center display with max-width
+**/
+@for $size from 500 through 1500 {
+	.center-display-max-#{$size} {
+		margin: 0 auto !important;
+		max-width: #{$size}px !important;
+	}
+}
