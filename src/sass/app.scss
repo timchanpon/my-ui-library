@@ -1,5 +1,7 @@
 // Material Icons
-@import '~material-design-icons/iconfont/material-icons.css';
+@import 'https://fonts.googleapis.com/icon?family=Material+Icons';
+// For webpack user (Required package: 'material-design-icons')
+// @import '~material-design-icons/iconfont/material-icons.css';
 
 // Variables
 @import './vars/colorPallete';
