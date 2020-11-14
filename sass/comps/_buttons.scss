@@ -11,7 +11,6 @@ $baseZIndex: map-get($config, baseZIndex);
 	bottom: 10px; right: 10px;
 	z-index: calc(#{$baseZIndex} + 1);
 
-	cursor: pointer;
 	border-radius: 50%;
 	background-color: rgba(128,128,128, .3);
 }

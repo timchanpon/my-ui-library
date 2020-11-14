@@ -22,8 +22,11 @@
 	box-sizing: border-box;
 }
 
-a {
+a, button, i {
 	cursor: pointer;
+}
+
+a {
 	text-decoration: none;
 
 	&:hover {
