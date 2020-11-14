@@ -1,6 +1,6 @@
 @if ($paginator->hasPages())
 	<nav class="laravel-pagination margin-y-6">
-		{{-- Prev btn --}}
+		{{-- Prev Btn --}}
 		@if (!$paginator->onFirstPage())
 			<a href="{{ $paginator->previousPageUrl() }}">
 				<i class="material-icons">keyboard_arrow_left</i>
@@ -22,7 +22,7 @@
 			@endif
 		@endforeach
 
-		{{-- Next btn --}}
+		{{-- Next Btn --}}
 		@if ($paginator->hasMorePages())
 			<a href="{{ $paginator->nextPageUrl() }}">
 				<i class="material-icons">keyboard_arrow_right</i>
