@@ -13,3 +13,18 @@
 @import './utils/texts';
 
 // Components
+@import './comps/paginations';
+
+
+* {
+	box-sizing: border-box;
+}
+
+a {
+	cursor: pointer;
+	text-decoration: none;
+
+	&:hover {
+		text-decoration: underline;
+	}
+}
