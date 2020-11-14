@@ -12,9 +12,8 @@ server.on('request', function(req, res)
 							.end('Favicon is unavailable.');
 	}
 
-	const fileType = req.url.split('.').pop();
 	const file = `dist${req.url}`;
-	const contentType = `text/${fileType}`;
+	const fileType = req.url.split('.').pop();
 
 	fs.readFile(file, 'utf-8', (err, data) => {
 		if (!data) {
@@ -24,12 +23,12 @@ server.on('request', function(req, res)
 								.end('Something went wrong. Please check the log.');
 		}
 
-		res.writeHead(200, { 'Content-Type': contentType });
+		res.writeHead(200, { 'Content-Type': `text/${fileType}` });
 		res.write(data);
 		res.end();
 	});
 });
 
 server.listen(80, '0.0.0.0', () => {
-	console.log(`Server running at http://localhost:3000/`);
+	console.log('Server running at http://localhost:3000/');
 });
