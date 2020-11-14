@@ -3,6 +3,7 @@
 
 // Variables
 @import './vars/colorPallete';
+@import './vars/config';
 
 // Utilities
 @import './utils/decorations';
@@ -13,6 +14,7 @@
 @import './utils/texts';
 
 // Components
+@import './comps/buttons';
 @import './comps/paginations';
 
 

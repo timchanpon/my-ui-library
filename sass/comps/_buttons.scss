@@ -1,0 +1,17 @@
+$baseZIndex: map-get($config, baseZIndex);
+
+
+/* ====================
+ * Scroll Top Btn
+ *
+ * Usage: '/html/buttons.html'
+**/
+.btn-scroll-top {
+	position: fixed;
+	bottom: 10px; right: 10px;
+	z-index: calc(#{$baseZIndex} + 1);
+
+	cursor: pointer;
+	border-radius: 50%;
+	background-color: rgba(128,128,128, .3);
+}
