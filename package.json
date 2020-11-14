@@ -2,6 +2,7 @@
 	"name": "my-ui-library",
 	"version": "1.0.0",
 	"scripts": {
+		"serve": "node server.js",
 		"dev": "node-sass src/sass/app.scss dist/css/app.css",
 		"watch": "node-sass -w src/sass/app.scss dist/css/app.css",
 		"prod": "node-sass --output-style compressed src/sass/app.scss dist/css/app.min.css"
