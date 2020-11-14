@@ -2,9 +2,9 @@
 	"name": "my-ui-library",
 	"version": "1.0.0",
 	"scripts": {
-		"dev": "node-sass sass/app.scss css/app.css",
-		"watch": "node-sass -w sass/app.scss css/app.css",
-		"prod": "node-sass --output-style compressed sass/app.scss css/app.min.css"
+		"dev": "node-sass src/sass/app.scss dist/css/app.css",
+		"watch": "node-sass -w src/sass/app.scss dist/css/app.css",
+		"prod": "node-sass --output-style compressed src/sass/app.scss dist/css/app.min.css"
 	},
 	"dependencies": {
 		"material-design-icons": "^3.0.1",
