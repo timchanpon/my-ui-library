@@ -6,7 +6,7 @@ const server = http.createServer();
 server.on('request', function(req, res)
 {
 	if (req.url === '/') {
-		res.writeHead(302, { Location: '/index.html' });
+		res.writeHead(302, { 'Location': '/index.html' });
 		res.end();
 
 		return console.log(`Request [302]: ${req.url}`);
