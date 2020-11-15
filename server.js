@@ -8,10 +8,13 @@ server.on('request', function(req, res)
 	console.log(`Request: ${req.url}`);
 
 	if (req.url === '/') {
-		return res.writeHead(302, { Location: '/index.html' }).end();
+		res.writeHead(302, { Location: '/index.html' });
+
+		return res.end();
 	} else if (req.url === '/favicon.ico') {
-		return res.writeHead(200, { 'Content-Type': 'text/plain' })
-							.end('Favicon is unavailable.');
+		res.writeHead(200, { 'Content-Type': 'text/plain' });
+
+		return res.end('Favicon is unavailable.');
 	}
 
 	const file = `dist${req.url}`;
@@ -20,9 +23,9 @@ server.on('request', function(req, res)
 	fs.readFile(file, 'utf-8', (err, data) => {
 		if (!data) {
 			console.error(err);
+			res.writeHead(404, { 'Content-Type': 'text/plain' });
 
-			return res.writeHead(404, { 'Content-Type': 'text/plain' })
-								.end('Something went wrong. Please check the log.');
+			return res.end('Something went wrong. Please check the log.');
 		}
 
 		res.writeHead(200, { 'Content-Type': `text/${fileType}` });
