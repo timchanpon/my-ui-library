@@ -14,3 +14,25 @@ $baseZIndex: map-get($config, baseZIndex);
 	border-radius: 50%;
 	background-color: rgba(128,128,128, .3);
 }
+
+
+/* ====================
+ * Primary Btn
+ *
+ * Usage: '/dist/index.html'
+**/
+.btn-primary {
+	padding: 12px 23px;
+
+	color: white;
+	font-size: 15px;
+	border: none;
+	border-radius: 10px;
+	background-color: #1A60A3;
+	box-shadow: 2px 2px 2px #cdd1d3;
+
+	&:hover {
+		background-color: #2f78be;
+		box-shadow: none;
+	}
+}
