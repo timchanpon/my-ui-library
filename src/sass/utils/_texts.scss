@@ -23,7 +23,7 @@ $textAlignValues: left, center, right;
 /* ====================
  * Font Size
 **/
-@for $size from 1 through 30 {
+@for $size from 1 through 50 {
 	.font-size-#{$size} {
 		font-size: calc(#{$size} * 0.1rem) !important;
 	}

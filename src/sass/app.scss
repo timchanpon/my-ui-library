@@ -1,0 +1,37 @@
+// Material Icons
+@import 'https://fonts.googleapis.com/icon?family=Material+Icons';
+// For webpack user (Required package: 'material-design-icons')
+// @import '~material-design-icons/iconfont/material-icons.css';
+
+// Variables
+@import './vars/colorPallete';
+@import './vars/config';
+
+// Utilities
+@import './utils/decorations';
+@import './utils/displays';
+@import './utils/elmSizes';
+@import './utils/margins';
+@import './utils/positions';
+@import './utils/texts';
+
+// Components
+@import './comps/buttons';
+@import './comps/paginations';
+
+
+* {
+	box-sizing: border-box;
+}
+
+a, button, i {
+	cursor: pointer;
+}
+
+a {
+	text-decoration: none;
+
+	&:hover {
+		text-decoration: underline;
+	}
+}
