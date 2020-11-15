@@ -7,7 +7,9 @@ server.on('request', function(req, res)
 {
 	console.log(`Request: ${req.url}`);
 
-	if (req.url === '/favicon.ico') {
+	if (req.url === '/') {
+		return res.writeHead(302, { Location: '/index.html' }).end();
+	} else if (req.url === '/favicon.ico') {
 		return res.writeHead(200, { 'Content-Type': 'text/plain' })
 							.end('Favicon is unavailable.');
 	}
