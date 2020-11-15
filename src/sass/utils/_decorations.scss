@@ -5,6 +5,16 @@
 	border: none !important;
 }
 
+.border-radius-pct-50 {
+	border-radius: 50% !important;
+}
+
+@for $num from 0 through 50 {
+	.border-radius-px-#{$num} {
+		border-radius: #{$num}px !important;
+	}
+}
+
 
 /* ====================
  * Cursor
