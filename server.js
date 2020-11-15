@@ -1,5 +1,5 @@
-const http = require('http');
 const fs = require('fs');
+const http = require('http');
 
 const server = http.createServer();
 
@@ -22,10 +22,10 @@ server.on('request', function(req, res)
 
 	fs.readFile(file, 'utf-8', (err, data) => {
 		if (!data) {
-			console.error(err);
 			res.writeHead(404, { 'Content-Type': 'text/plain' });
+			res.end('Something went wrong. Please check the log.');
 
-			return res.end('Something went wrong. Please check the log.');
+			return console.error(err);
 		}
 
 		res.writeHead(200, { 'Content-Type': `text/${fileType}` });
