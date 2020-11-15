@@ -5,16 +5,16 @@ const server = http.createServer();
 
 server.on('request', function(req, res)
 {
-	console.log(`Request: ${req.url}`);
-
 	if (req.url === '/') {
 		res.writeHead(302, { Location: '/index.html' });
+		res.end();
 
-		return res.end();
+		return console.log(`Request [302]: ${req.url}`);
 	} else if (req.url === '/favicon.ico') {
 		res.writeHead(200, { 'Content-Type': 'text/plain' });
+		res.end('Favicon is unavailable.');
 
-		return res.end('Favicon is unavailable.');
+		return console.log(`Request [200]: ${req.url}`);
 	}
 
 	const file = `dist${req.url}`;
@@ -25,12 +25,14 @@ server.on('request', function(req, res)
 			res.writeHead(404, { 'Content-Type': 'text/plain' });
 			res.end('Something went wrong. Please check the log.');
 
-			return console.error(err);
+			return console.log(`Request [404]: ${req.url}\n${err}`);
 		}
 
 		res.writeHead(200, { 'Content-Type': `text/${fileType}` });
 		res.write(data);
 		res.end();
+
+		console.log(`Request [200]: ${req.url}`);
 	});
 });
 
