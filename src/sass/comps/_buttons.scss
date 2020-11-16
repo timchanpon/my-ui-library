@@ -35,4 +35,10 @@ $baseZIndex: map-get($config, baseZIndex);
 		background-color: #2f78be;
 		box-shadow: none;
 	}
+
+	&:disabled {
+		background-color: #6FAAFF;
+		box-shadow: none;
+		cursor: auto;
+	}
 }
