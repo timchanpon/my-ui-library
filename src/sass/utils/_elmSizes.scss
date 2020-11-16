@@ -22,7 +22,7 @@
 /* ====================
  * Relative Size
 **/
-@for $size from 1 through 100 {
+@for $size from 1 through 200 {
 	.width-pct-#{$size} {
 		width: calc(#{$size} * 1%) !important;
 	}
@@ -32,5 +32,9 @@
 
 	.height-vh-#{$size} {
 		height: calc(#{$size} * 1vh) !important;
+	}
+
+	.min-width-pct-#{$size} {
+		min-width: calc(#{$size} * 1%) !important;
 	}
 }
