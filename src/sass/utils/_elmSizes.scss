@@ -9,6 +9,10 @@
 		height: #{$size}px !important;
 	}
 
+	.min-width-px-#{$size} {
+		min-width: #{$size}px !important;
+	}
+
 	.max-width-px-#{$size} {
 		max-width: #{$size}px !important;
 	}
