@@ -38,5 +38,6 @@ $baseZIndex: map-get($config, baseZIndex);
 		border-radius: 10px;
 		pointer-events: auto;
 		background-color: white;
+		box-shadow: 0 0 10px 10px rgba(0,0,0, .1);
 	}
 }
