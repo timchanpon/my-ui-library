@@ -38,6 +38,15 @@ $justifyContentValues: left, center, right, space-between, space-evenly;
 
 
 /* ====================
+ * Grid
+**/
+.align-center-middle {
+	display: grid !important;
+	place-items: center	!important;
+}
+
+
+/* ====================
  * Overflow
 **/
 $overflowValues: auto, hidden, scroll;

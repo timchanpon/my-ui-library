@@ -19,6 +19,11 @@ $textAlignValues: left, center, right;
 	}
 }
 
+.text-align-middle {
+	display: flex !important;
+	align-items: center !important;
+}
+
 
 /* ====================
  * Font Size
