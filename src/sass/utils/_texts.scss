@@ -33,3 +33,13 @@ $textAlignValues: left, center, right;
 		font-size: calc(#{$size} * 0.1rem) !important;
 	}
 }
+
+
+/* ====================
+ * Text Overflow
+**/
+.text-ellipsis {
+	overflow: hidden !important;
+	white-space: nowrap !important;
+	text-overflow: ellipsis !important;
+}
