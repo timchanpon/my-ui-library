@@ -30,6 +30,7 @@ $baseZIndex: map-get($config, baseZIndex);
 	// Optional args
 	$color: white,
 ) {
+	margin: 12px;
 	padding: 12px 23px;
 
 	color: $color;
@@ -56,6 +57,16 @@ $baseZIndex: map-get($config, baseZIndex);
 		'bgColor': #1A60A3,
 		'bgColorHover': #2f78be,
 		'bgColorDisabled': #6FAAFF,
+	);
+
+	@include btn($options...);
+}
+
+.btn-secondary {
+	$options: (
+		'bgColor': #868F96,
+		'bgColorHover': #868f96cc,
+		'bgColorDisabled': #B0B6BB,
 	);
 
 	@include btn($options...);
