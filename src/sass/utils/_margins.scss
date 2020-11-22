@@ -4,6 +4,9 @@
 .margin-x-auto {
 	margin: 0 auto !important;
 }
+.margin-y-auto {
+	margin: auto 0 !important;
+}
 
 @for $size from 0 through 20 {
 	.margin-#{$size},
@@ -33,6 +36,13 @@
 /* ====================
  * Padding
 **/
+.padding-x-auto {
+	padding: 0 auto !important;
+}
+.padding-y-auto {
+	padding: auto 0 !important;
+}
+
 @for $size from 0 through 20 {
 	.padding-#{$size},
 	.padding-x-#{$size},
