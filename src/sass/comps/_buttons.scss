@@ -17,28 +17,46 @@ $baseZIndex: map-get($config, baseZIndex);
 
 
 /* ====================
- * Primary Btn
+ * Various Btns
  *
  * Usage: '/dist/index.html'
 **/
-.btn-primary {
+@mixin btn(
+	// Required args
+	$bgColor,
+	$bgColorHover,
+	$bgColorDisabled,
+
+	// Optional args
+	$color: white,
+) {
 	padding: 12px 23px;
 
-	color: white;
+	color: $color;
 	font-size: 15px;
 	border: none;
 	border-radius: 10px;
-	background-color: #1A60A3;
+	background-color: $bgColor;
 	box-shadow: 2px 2px 2px #cdd1d3;
 
 	&:hover {
-		background-color: #2f78be;
+		background-color: $bgColorHover;
 		box-shadow: none;
 	}
 
 	&:disabled {
-		background-color: #6FAAFF;
+		background-color: $bgColorDisabled;
 		box-shadow: none;
 		cursor: auto;
 	}
+}
+
+.btn-primary {
+	$options: (
+		'bgColor': #1A60A3,
+		'bgColorHover': #2f78be,
+		'bgColorDisabled': #6FAAFF,
+	);
+
+	@include btn($options...);
 }
