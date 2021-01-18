@@ -42,18 +42,19 @@
     </div>
   </div>
 </body>
+
 <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
 <script>
-  new Vue({
-    el: '#vm',
-    data: {
-      isShowModal: false,
+new Vue({
+  el: '#vm',
+  data: {
+    isShowModal: false,
+  },
+  methods: {
+    toggleModal() {
+      this.isShowModal = !this.isShowModal;
     },
-    methods: {
-      toggleModal() {
-        this.isShowModal = !this.isShowModal;
-      },
-    },
-  });
+  },
+});
 </script>
 </html>
