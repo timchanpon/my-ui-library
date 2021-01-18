@@ -7,12 +7,12 @@ $baseZIndex: map-get($config, baseZIndex);
  * Usage: '/dist/index.html'
 **/
 .btn-scroll-top {
-	position: fixed;
-	bottom: 10px; right: 10px;
-	z-index: calc(#{$baseZIndex} + 1);
+  position: fixed;
+  bottom: 10px; right: 10px;
+  z-index: calc(#{$baseZIndex} + 1);
 
-	border-radius: 50%;
-	background-color: rgba(128,128,128, .3);
+  border-radius: 50%;
+  background-color: rgba(128,128,128, .3);
 }
 
 
@@ -22,52 +22,52 @@ $baseZIndex: map-get($config, baseZIndex);
  * Usage: '/dist/index.html'
 **/
 @mixin btn(
-	// Required args
-	$bgColor,
-	$bgColorHover,
-	$bgColorDisabled,
+  // Required args
+  $bgColor,
+  $bgColorHover,
+  $bgColorDisabled,
 
-	// Optional args
-	$color: white,
+  // Optional args
+  $color: white,
 ) {
-	margin: 12px;
-	padding: 12px 23px;
+  margin: 12px;
+  padding: 12px 23px;
 
-	color: $color;
-	font-size: 15px;
-	border: none;
-	border-radius: 10px;
-	background-color: $bgColor;
-	box-shadow: 2px 2px 2px #cdd1d3;
+  color: $color;
+  font-size: 15px;
+  border: none;
+  border-radius: 10px;
+  background-color: $bgColor;
+  box-shadow: 2px 2px 2px #cdd1d3;
 
-	&:hover {
-		background-color: $bgColorHover;
-		box-shadow: none;
-	}
+  &:hover {
+    background-color: $bgColorHover;
+    box-shadow: none;
+  }
 
-	&:disabled {
-		background-color: $bgColorDisabled;
-		box-shadow: none;
-		cursor: auto;
-	}
+  &:disabled {
+    background-color: $bgColorDisabled;
+    box-shadow: none;
+    cursor: auto;
+  }
 }
 
 .btn-primary {
-	$options: (
-		'bgColor': #1A60A3,
-		'bgColorHover': #2f78be,
-		'bgColorDisabled': #6FAAFF,
-	);
+  $options: (
+    'bgColor': #1A60A3,
+    'bgColorHover': #2f78be,
+    'bgColorDisabled': #6FAAFF,
+  );
 
-	@include btn($options...);
+  @include btn($options...);
 }
 
 .btn-secondary {
-	$options: (
-		'bgColor': #868F96,
-		'bgColorHover': #868f96cc,
-		'bgColorDisabled': #B0B6BB,
-	);
+  $options: (
+    'bgColor': #868F96,
+    'bgColorHover': #868f96cc,
+    'bgColorDisabled': #B0B6BB,
+  );
 
-	@include btn($options...);
+  @include btn($options...);
 }

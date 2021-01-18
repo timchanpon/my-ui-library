@@ -2,34 +2,34 @@
  * Margin
 **/
 .margin-x-auto {
-	margin: 0 auto !important;
+  margin: 0 auto !important;
 }
 .margin-y-auto {
-	margin: auto 0 !important;
+  margin: auto 0 !important;
 }
 
 @for $size from 0 through 20 {
-	.margin-#{$size},
-	.margin-x-#{$size},
-	.margin-left-#{$size} {
-		margin-left: calc(#{$size} * 0.25rem) !important;
-	}
-	.margin-#{$size},
-	.margin-x-#{$size},
-	.margin-right-#{$size} {
-		margin-right: calc(#{$size} * 0.25rem) !important;
-	}
+  .margin-#{$size},
+  .margin-x-#{$size},
+  .margin-left-#{$size} {
+    margin-left: calc(#{$size} * 0.25rem) !important;
+  }
+  .margin-#{$size},
+  .margin-x-#{$size},
+  .margin-right-#{$size} {
+    margin-right: calc(#{$size} * 0.25rem) !important;
+  }
 
-	.margin-#{$size},
-	.margin-y-#{$size},
-	.margin-top-#{$size} {
-		margin-top: calc(#{$size} * 0.25rem) !important;
-	}
-	.margin-#{$size},
-	.margin-y-#{$size},
-	.margin-bottom-#{$size} {
-		margin-bottom: calc(#{$size} * 0.25rem) !important;
-	}
+  .margin-#{$size},
+  .margin-y-#{$size},
+  .margin-top-#{$size} {
+    margin-top: calc(#{$size} * 0.25rem) !important;
+  }
+  .margin-#{$size},
+  .margin-y-#{$size},
+  .margin-bottom-#{$size} {
+    margin-bottom: calc(#{$size} * 0.25rem) !important;
+  }
 }
 
 
@@ -37,32 +37,32 @@
  * Padding
 **/
 .padding-x-auto {
-	padding: 0 auto !important;
+  padding: 0 auto !important;
 }
 .padding-y-auto {
-	padding: auto 0 !important;
+  padding: auto 0 !important;
 }
 
 @for $size from 0 through 20 {
-	.padding-#{$size},
-	.padding-x-#{$size},
-	.padding-left-#{$size} {
-		padding-left: calc(#{$size} * 0.25rem) !important;
-	}
-	.padding-#{$size},
-	.padding-x-#{$size},
-	.padding-right-#{$size} {
-		padding-right: calc(#{$size} * 0.25rem) !important;
-	}
+  .padding-#{$size},
+  .padding-x-#{$size},
+  .padding-left-#{$size} {
+    padding-left: calc(#{$size} * 0.25rem) !important;
+  }
+  .padding-#{$size},
+  .padding-x-#{$size},
+  .padding-right-#{$size} {
+    padding-right: calc(#{$size} * 0.25rem) !important;
+  }
 
-	.padding-#{$size},
-	.padding-y-#{$size},
-	.padding-top-#{$size} {
-		padding-top: calc(#{$size} * 0.25rem) !important;
-	}
-	.padding-#{$size},
-	.padding-y-#{$size},
-	.padding-bottom-#{$size} {
-		padding-bottom: calc(#{$size} * 0.25rem) !important;
-	}
+  .padding-#{$size},
+  .padding-y-#{$size},
+  .padding-top-#{$size} {
+    padding-top: calc(#{$size} * 0.25rem) !important;
+  }
+  .padding-#{$size},
+  .padding-y-#{$size},
+  .padding-bottom-#{$size} {
+    padding-bottom: calc(#{$size} * 0.25rem) !important;
+  }
 }

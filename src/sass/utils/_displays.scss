@@ -4,9 +4,9 @@
 $displayValues: block, flex, grid, none;
 
 @each $val in $displayValues {
-	.display-#{$val} {
-		display: $val !important;
-	}
+  .display-#{$val} {
+    display: $val !important;
+  }
 }
 
 
@@ -17,23 +17,23 @@ $alignItemsValues: start, center, end;
 $justifyContentValues: left, center, right, space-between, space-evenly;
 
 @each $val in $alignItemsValues {
-	.align-items-#{$val} {
-		align-items: $val !important;
-	}
+  .align-items-#{$val} {
+    align-items: $val !important;
+  }
 }
 
 @each $val in $justifyContentValues {
-	.justify-content-#{$val} {
-		justify-content: $val !important;
-	}
+  .justify-content-#{$val} {
+    justify-content: $val !important;
+  }
 }
 
 .flex-wrap-wrap {
-	flex-wrap: wrap !important;
+  flex-wrap: wrap !important;
 }
 
 .flex-direction-column {
-	flex-direction: column !important;
+  flex-direction: column !important;
 }
 
 
@@ -41,8 +41,8 @@ $justifyContentValues: left, center, right, space-between, space-evenly;
  * Grid
 **/
 .align-center-middle {
-	display: grid !important;
-	place-items: center	!important;
+  display: grid !important;
+  place-items: center !important;
 }
 
 
@@ -52,15 +52,15 @@ $justifyContentValues: left, center, right, space-between, space-evenly;
 $overflowValues: auto, hidden, scroll;
 
 @each $val in $overflowValues {
-	.overflow-#{$val},
-	.overflow-x-#{$val} {
-		overflow-x: $val !important;
-	}
+  .overflow-#{$val},
+  .overflow-x-#{$val} {
+    overflow-x: $val !important;
+  }
 
-	.overflow-#{$val},
-	.overflow-y-#{$val} {
-		overflow-y: $val !important;
-	}
+  .overflow-#{$val},
+  .overflow-y-#{$val} {
+    overflow-y: $val !important;
+  }
 }
 
 
@@ -70,9 +70,9 @@ $overflowValues: auto, hidden, scroll;
 $objectFitValues: contain, cover;
 
 @each $val in $objectFitValues {
-	.object-fit-#{$val} {
-		object-fit: $val !important;
-	}
+  .object-fit-#{$val} {
+    object-fit: $val !important;
+  }
 }
 
 
@@ -80,8 +80,8 @@ $objectFitValues: contain, cover;
  * Center display with max-width
 **/
 @for $size from 500 through 1500 {
-	.center-display-max-#{$size} {
-		margin: 0 auto !important;
-		max-width: #{$size}px !important;
-	}
+  .center-display-max-#{$size} {
+    margin: 0 auto !important;
+    max-width: #{$size}px !important;
+  }
 }

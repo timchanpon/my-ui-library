@@ -2,17 +2,17 @@
  * Border
 **/
 .border-none {
-	border: none !important;
+  border: none !important;
 }
 
 .border-radius-pct-50 {
-	border-radius: 50% !important;
+  border-radius: 50% !important;
 }
 
 @for $num from 0 through 50 {
-	.border-radius-px-#{$num} {
-		border-radius: #{$num}px !important;
-	}
+  .border-radius-px-#{$num} {
+    border-radius: #{$num}px !important;
+  }
 }
 
 
@@ -20,7 +20,7 @@
  * Cursor
 **/
 .cursor-pointer {
-	cursor: pointer !important;
+  cursor: pointer !important;
 }
 
 
@@ -28,7 +28,7 @@
  * Background Color
 **/
 @each $key, $color in $colorPallete {
-	.bg-color-#{$key} {
-		background-color: $color !important;
-	}
+  .bg-color-#{$key} {
+    background-color: $color !important;
+  }
 }

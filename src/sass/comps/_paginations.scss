@@ -4,29 +4,29 @@
  * Blade view: '/src/views/pagination.blade.php'
 **/
 .laravel-pagination {
-	$baseSize: 50px;
+  $baseSize: 50px;
 
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 
-	i {
-		line-height: $baseSize;
-		font-size: calc(20 * 0.1rem);
-	}
+  i {
+    line-height: $baseSize;
+    font-size: calc(20 * 0.1rem);
+  }
 
-	a, span {
-		width: $baseSize;
-		height: $baseSize;
-		line-height: $baseSize;
+  a, span {
+    width: $baseSize;
+    height: $baseSize;
+    line-height: $baseSize;
 
-		color: black;
-		text-align: center;
-		font-size: calc(15 * 0.1rem);
+    color: black;
+    text-align: center;
+    font-size: calc(15 * 0.1rem);
 
-		&#curPage {
-			border-radius: 50%;
-			background-color: #EFEFEF;
-		}
-	}
+    &#curPage {
+      border-radius: 50%;
+      background-color: #EFEFEF;
+    }
+  }
 }
