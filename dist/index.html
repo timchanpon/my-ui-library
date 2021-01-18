@@ -1,59 +1,60 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link href="/css/app.min.css" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="/css/app.min.css" rel="stylesheet">
 </head>
 <body>
-	<div id="vm">
-		<!-- Scroll Top Btn -->
-		<i class="material-icons btn-scroll-top font-size-30">keyboard_arrow_up</i>
+  <div id="vm">
+    <!-- Scroll Top Btn -->
+    <i class="material-icons btn-scroll-top font-size-30">keyboard_arrow_up</i>
 
-		<!-- Primary Btn -->
-		<div class="text-align-center">
-			<button class="btn-secondary">This is secondary button</button>
-			<button
-				class="btn-primary"
-				@click="toggleModal()"
-			>Show Modal</button>
-		</div>
+    <!-- Primary Btn -->
+    <div class="text-align-center">
+      <button class="btn-secondary">This is secondary button</button>
+      <button
+        class="btn-primary"
+        @click="toggleModal()"
+      >Show Modal</button>
+    </div>
 
-		<!-- Circle Loader -->
-		<div class="display-flex justify-content-space-evenly align-items-center margin-top-15">
-			<div class="loader-circle small"></div>
-			<div class="loader-circle medium"></div>
-			<div class="loader-circle large"></div>
-		</div>
+    <!-- Circle Loader -->
+    <div class="display-flex justify-content-space-evenly align-items-center margin-top-15">
+      <div class="loader-circle small"></div>
+      <div class="loader-circle medium"></div>
+      <div class="loader-circle large"></div>
+    </div>
 
-		<!-- Modal Overlay -->
-		<div
-			v-if="isShowModal"
-			class="modal-overlay"
-			@click="toggleModal()"
-		></div>
+    <!-- Modal Overlay -->
+    <div
+      v-if="isShowModal"
+      class="modal-overlay"
+      @click="toggleModal()"
+    ></div>
 
-		<!-- Modal -->
-		<div
-			v-if="isShowModal"
-			class="modal-container"
-		>
-			<div class="modal width-pct-50 height-pct-50">This is modal.</div>
-		</div>
-	</div>
+    <!-- Modal -->
+    <div
+      v-if="isShowModal"
+      class="modal-container"
+    >
+      <div class="modal width-pct-50 height-pct-50">This is modal.</div>
+    </div>
+  </div>
 </body>
+
 <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
 <script>
-	new Vue({
-		el: '#vm',
-		data: {
-			isShowModal: false,
-		},
-		methods: {
-			toggleModal() {
-				this.isShowModal = !this.isShowModal;
-			},
-		},
-	});
+new Vue({
+  el: '#vm',
+  data: {
+    isShowModal: false,
+  },
+  methods: {
+    toggleModal() {
+      this.isShowModal = !this.isShowModal;
+    },
+  },
+});
 </script>
 </html>

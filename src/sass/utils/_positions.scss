@@ -1,36 +1,36 @@
 /* ====================
- * Position Types
-**/
+* Position Types
+*/
 $positionValues: absolute, fixed, relative, sticky;
 
 @each $val in $positionValues {
-	.position-#{$val} {
-		position: $val !important;
-	}
+  .position-#{$val} {
+    position: $val !important;
+  }
 }
 
 
 /* ====================
- * Position
-**/
+* Position
+*/
 @for $num from 1 through 5 {
-	.z-index-#{$num} {
-		z-index: $num !important;
-	}
+  .z-index-#{$num} {
+    z-index: $num !important;
+  }
 }
 
 @for $num from 0 through 500 {
-	.top-px-#{$num} {
-		top: #{$num}px !important;
-	}
-	.bottom-px-#{$num} {
-		bottom: #{$num}px !important;
-	}
+  .top-px-#{$num} {
+    top: #{$num}px !important;
+  }
+  .bottom-px-#{$num} {
+    bottom: #{$num}px !important;
+  }
 
-	.left-px-#{$num} {
-		left: #{$num}px !important;
-	}
-	.right-px-#{$num} {
-		right: #{$num}px !important;
-	}
+  .left-px-#{$num} {
+    left: #{$num}px !important;
+  }
+  .right-px-#{$num} {
+    right: #{$num}px !important;
+  }
 }
