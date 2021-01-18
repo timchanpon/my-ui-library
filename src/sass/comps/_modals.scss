@@ -2,10 +2,10 @@ $baseZIndex: map-get($config, baseZIndex);
 
 
 /* ====================
- * Modal Overlay
- *
- * Usage: '/dist/index.html'
-**/
+* Modal Overlay
+*
+* Usage: '/dist/index.html'
+*/
 .modal-overlay {
   position: fixed;
   top: 0; right: 0;
@@ -18,10 +18,10 @@ $baseZIndex: map-get($config, baseZIndex);
 
 
 /* ====================
- * Modal
- *
- * Usage: '/dist/index.html'
-**/
+* Modal
+*
+* Usage: '/dist/index.html'
+*/
 .modal-container {
   position: fixed;
   top: 0; right: 0;

@@ -2,10 +2,10 @@ $baseZIndex: map-get($config, baseZIndex);
 
 
 /* ====================
- * Scroll Top Btn
- *
- * Usage: '/dist/index.html'
-**/
+* Scroll Top Btn
+*
+* Usage: '/dist/index.html'
+*/
 .btn-scroll-top {
   position: fixed;
   bottom: 10px; right: 10px;
@@ -17,10 +17,10 @@ $baseZIndex: map-get($config, baseZIndex);
 
 
 /* ====================
- * Various Btns
- *
- * Usage: '/dist/index.html'
-**/
+* Various Btns
+*
+* Usage: '/dist/index.html'
+*/
 @mixin btn(
   // Required args
   $bgColor,
