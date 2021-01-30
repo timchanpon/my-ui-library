@@ -1,6 +1,6 @@
-/* ====================
-* Display
-*/
+/*
+ * Display
+ */
 $displayValues: block, flex, grid, none;
 
 @each $val in $displayValues {
@@ -10,9 +10,9 @@ $displayValues: block, flex, grid, none;
 }
 
 
-/* ====================
-* Flex
-*/
+/*
+ * Flex
+ */
 $alignItemsValues: start, center, end;
 $justifyContentValues: left, center, right, space-between, space-evenly;
 
@@ -37,18 +37,18 @@ $justifyContentValues: left, center, right, space-between, space-evenly;
 }
 
 
-/* ====================
-* Grid
-*/
+/*
+ * Grid
+ */
 .align-center-middle {
   display: grid !important;
   place-items: center !important;
 }
 
 
-/* ====================
-* Overflow
-*/
+/*
+ * Overflow
+ */
 $overflowValues: auto, hidden, scroll;
 
 @each $val in $overflowValues {
@@ -64,9 +64,9 @@ $overflowValues: auto, hidden, scroll;
 }
 
 
-/* ====================
-* Images
-*/
+/*
+ * Images
+ */
 $objectFitValues: contain, cover;
 
 @each $val in $objectFitValues {
@@ -76,9 +76,9 @@ $objectFitValues: contain, cover;
 }
 
 
-/* ====================
-* Center display with max-width
-*/
+/*
+ * Center display with max-width
+ */
 @for $size from 500 through 1500 {
   .center-display-max-#{$size} {
     margin: 0 auto !important;

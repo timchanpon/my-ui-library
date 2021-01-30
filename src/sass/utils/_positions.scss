@@ -1,6 +1,6 @@
-/* ====================
-* Position Types
-*/
+/*
+ * Position Types
+ */
 $positionValues: absolute, fixed, relative, sticky;
 
 @each $val in $positionValues {
@@ -10,9 +10,9 @@ $positionValues: absolute, fixed, relative, sticky;
 }
 
 
-/* ====================
-* Position
-*/
+/*
+ * Position
+ */
 @for $num from 1 through 5 {
   .z-index-#{$num} {
     z-index: $num !important;

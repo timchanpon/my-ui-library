@@ -1,6 +1,6 @@
-/* ====================
-* Absolute Size
-*/
+/*
+ * Absolute Size
+ */
 @for $size from 1 through 1500 {
   .width-px-#{$size} {
     width: #{$size}px !important;
@@ -25,9 +25,9 @@
 }
 
 
-/* ====================
-* Relative Size
-*/
+/*
+ * Relative Size
+ */
 @for $size from 1 through 200 {
   .width-pct-#{$size} {
     width: calc(#{$size} * 1%) !important;
