@@ -1,6 +1,6 @@
-/* ====================
-* Text Color
-*/
+/*
+ * Text Color
+ */
 @each $key, $color in $colorPallete {
   .color-#{$key} {
     color: $color !important;
@@ -8,9 +8,9 @@
 }
 
 
-/* ====================
-* Text Align
-*/
+/*
+ * Text Align
+ */
 $textAlignValues: left, center, right;
 
 @each $val in $textAlignValues {
@@ -25,9 +25,9 @@ $textAlignValues: left, center, right;
 }
 
 
-/* ====================
-* Font Size
-*/
+/*
+ * Font Size
+ */
 @for $size from 1 through 50 {
   .font-size-#{$size} {
     font-size: calc(#{$size} * 0.1rem) !important;
@@ -35,17 +35,17 @@ $textAlignValues: left, center, right;
 }
 
 
-/* ====================
-* Font Weight
-*/
+/*
+ * Font Weight
+ */
 .font-weight-bold {
   font-weight: bold !important;
 }
 
 
-/* ====================
-* Text Overflow
-*/
+/*
+ * Text Overflow
+ */
 .text-ellipsis {
   overflow: hidden !important;
   white-space: nowrap !important;

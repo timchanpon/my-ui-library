@@ -1,6 +1,6 @@
-/* ====================
-* Border
-*/
+/*
+ * Border
+ */
 .border-none {
   border: none !important;
 }
@@ -16,17 +16,17 @@
 }
 
 
-/* ====================
-* Cursor
-*/
+/*
+ * Cursor
+ */
 .cursor-pointer {
   cursor: pointer !important;
 }
 
 
-/* ====================
-* Background Color
-*/
+/*
+ * Background Color
+ */
 @each $key, $color in $colorPallete {
   .bg-color-#{$key} {
     background-color: $color !important;
