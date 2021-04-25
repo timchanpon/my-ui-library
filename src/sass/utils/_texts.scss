@@ -1,36 +1,9 @@
 /*
- * Text Color
- */
-@each $key, $color in $colorPallete {
-  .color-#{$key} {
-    color: $color !important;
-  }
-}
-
-
-/*
- * Text Align
- */
-$textAlignValues: left, center, right;
-
-@each $val in $textAlignValues {
-  .text-align-#{$val} {
-    text-align: $val !important;
-  }
-}
-
-.text-align-middle {
-  display: flex !important;
-  align-items: center !important;
-}
-
-
-/*
  * Font Size
  */
 @for $size from 1 through 50 {
-  .font-size-#{$size} {
-    font-size: calc(#{$size} * 0.1rem) !important;
+  .text-#{$size} {
+    font-size: calc(#{$size} * 0.1rem);
   }
 }
 
@@ -38,16 +11,18 @@ $textAlignValues: left, center, right;
 /*
  * Font Weight
  */
-.font-weight-bold {
-  font-weight: bold !important;
+@for $num from 1 through 9 {
+  .weight-#{$num} {
+    font-weight: calc(#{$num} * 100);
+  }
 }
 
 
 /*
- * Text Overflow
+ * Text Ellipsis
  */
 .text-ellipsis {
-  overflow: hidden !important;
-  white-space: nowrap !important;
-  text-overflow: ellipsis !important;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }

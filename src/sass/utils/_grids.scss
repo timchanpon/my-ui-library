@@ -1,0 +1,32 @@
+/*
+ * Grid Structure
+ */
+@for $num from 1 through 10 {
+  .grid-cols-#{$num} {
+    display: grid;
+    grid-template-columns: repeat(#{$num}, minmax(0, 1fr));
+  }
+
+  .grid-rows-#{$num} {
+    display: grid;
+    grid-template-rows: repeat(#{$num}, minmax(0, 1fr));
+  }
+}
+
+
+/*
+ * Gap
+ */
+@for $size from 0 through 20 {
+  .gap-#{$size} {
+    gap: calc(#{$size} * 0.25rem);
+  }
+
+  .gap-x-#{$size} {
+    column-gap: calc(#{$size} * 0.25rem);
+  }
+
+  .gap-y-#{$size} {
+    row-gap: calc(#{$size} * 0.25rem);
+  }
+}

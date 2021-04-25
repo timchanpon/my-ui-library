@@ -1,0 +1,30 @@
+/*
+ * Flex Type
+ */
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+
+/*
+ * Flex Placement
+ */
+$alignItemsValues: start, center, end;
+$justifyContentValues: left, center, right, space-between, space-evenly;
+
+@each $val in $alignItemsValues {
+  .items-#{$val} {
+    align-items: $val;
+  }
+}
+
+@each $val in $justifyContentValues {
+  .justify-#{$val} {
+    justify-content: $val;
+  }
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
