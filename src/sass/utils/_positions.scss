@@ -5,7 +5,7 @@ $positionValues: absolute, fixed, relative, sticky;
 
 @each $val in $positionValues {
   .position-#{$val} {
-    position: $val !important;
+    position: $val;
   }
 }
 
@@ -15,22 +15,22 @@ $positionValues: absolute, fixed, relative, sticky;
  */
 @for $num from 1 through 5 {
   .z-index-#{$num} {
-    z-index: $num !important;
+    z-index: $num;
   }
 }
 
 @for $num from 0 through 500 {
   .top-px-#{$num} {
-    top: #{$num}px !important;
+    top: #{$num}px;
   }
   .bottom-px-#{$num} {
-    bottom: #{$num}px !important;
+    bottom: #{$num}px;
   }
 
   .left-px-#{$num} {
-    left: #{$num}px !important;
+    left: #{$num}px;
   }
   .right-px-#{$num} {
-    right: #{$num}px !important;
+    right: #{$num}px;
   }
 }

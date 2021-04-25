@@ -5,7 +5,7 @@ $displayValues: block, flex, grid, none;
 
 @each $val in $displayValues {
   .display-#{$val} {
-    display: $val !important;
+    display: $val;
   }
 }
 
@@ -18,22 +18,22 @@ $justifyContentValues: left, center, right, space-between, space-evenly;
 
 @each $val in $alignItemsValues {
   .align-items-#{$val} {
-    align-items: $val !important;
+    align-items: $val;
   }
 }
 
 @each $val in $justifyContentValues {
   .justify-content-#{$val} {
-    justify-content: $val !important;
+    justify-content: $val;
   }
 }
 
 .flex-wrap-wrap {
-  flex-wrap: wrap !important;
+  flex-wrap: wrap;
 }
 
 .flex-direction-column {
-  flex-direction: column !important;
+  flex-direction: column;
 }
 
 
@@ -41,8 +41,8 @@ $justifyContentValues: left, center, right, space-between, space-evenly;
  * Grid
  */
 .align-center-middle {
-  display: grid !important;
-  place-items: center !important;
+  display: grid;
+  place-items: center;
 }
 
 
@@ -54,12 +54,12 @@ $overflowValues: auto, hidden, scroll;
 @each $val in $overflowValues {
   .overflow-#{$val},
   .overflow-x-#{$val} {
-    overflow-x: $val !important;
+    overflow-x: $val;
   }
 
   .overflow-#{$val},
   .overflow-y-#{$val} {
-    overflow-y: $val !important;
+    overflow-y: $val;
   }
 }
 
@@ -71,7 +71,7 @@ $objectFitValues: contain, cover;
 
 @each $val in $objectFitValues {
   .object-fit-#{$val} {
-    object-fit: $val !important;
+    object-fit: $val;
   }
 }
 
@@ -81,7 +81,7 @@ $objectFitValues: contain, cover;
  */
 @for $size from 500 through 1500 {
   .center-display-max-#{$size} {
-    margin: 0 auto !important;
-    max-width: #{$size}px !important;
+    margin: 0 auto;
+    max-width: #{$size}px;
   }
 }

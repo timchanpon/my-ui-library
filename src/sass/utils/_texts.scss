@@ -3,7 +3,7 @@
  */
 @each $key, $color in $colorPallete {
   .color-#{$key} {
-    color: $color !important;
+    color: $color;
   }
 }
 
@@ -15,13 +15,13 @@ $textAlignValues: left, center, right;
 
 @each $val in $textAlignValues {
   .text-align-#{$val} {
-    text-align: $val !important;
+    text-align: $val;
   }
 }
 
 .text-align-middle {
-  display: flex !important;
-  align-items: center !important;
+  display: flex;
+  align-items: center;
 }
 
 
@@ -30,7 +30,7 @@ $textAlignValues: left, center, right;
  */
 @for $size from 1 through 50 {
   .font-size-#{$size} {
-    font-size: calc(#{$size} * 0.1rem) !important;
+    font-size: calc(#{$size} * 0.1rem);
   }
 }
 
@@ -39,7 +39,7 @@ $textAlignValues: left, center, right;
  * Font Weight
  */
 .font-weight-bold {
-  font-weight: bold !important;
+  font-weight: bold;
 }
 
 
@@ -47,7 +47,7 @@ $textAlignValues: left, center, right;
  * Text Overflow
  */
 .text-ellipsis {
-  overflow: hidden !important;
-  white-space: nowrap !important;
-  text-overflow: ellipsis !important;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }

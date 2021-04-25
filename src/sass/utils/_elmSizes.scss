@@ -3,24 +3,24 @@
  */
 @for $size from 1 through 1500 {
   .width-px-#{$size} {
-    width: #{$size}px !important;
+    width: #{$size}px;
   }
   .height-px-#{$size} {
-    height: #{$size}px !important;
+    height: #{$size}px;
   }
 
   .min-width-px-#{$size} {
-    min-width: #{$size}px !important;
+    min-width: #{$size}px;
   }
   .min-height-px-#{$size} {
-    min-height: #{$size}px !important;
+    min-height: #{$size}px;
   }
 
   .max-width-px-#{$size} {
-    max-width: #{$size}px !important;
+    max-width: #{$size}px;
   }
   .max-height-px-#{$size} {
-    max-height: #{$size}px !important;
+    max-height: #{$size}px;
   }
 }
 
@@ -30,32 +30,32 @@
  */
 @for $size from 1 through 200 {
   .width-pct-#{$size} {
-    width: calc(#{$size} * 1%) !important;
+    width: calc(#{$size} * 1%);
   }
   .height-pct-#{$size} {
-    height: calc(#{$size} * 1%) !important;
+    height: calc(#{$size} * 1%);
   }
   .height-vh-#{$size} {
-    height: calc(#{$size} * 1vh) !important;
+    height: calc(#{$size} * 1vh);
   }
 
   .min-width-pct-#{$size} {
-    min-width: calc(#{$size} * 1%) !important;
+    min-width: calc(#{$size} * 1%);
   }
   .min-height-pct-#{$size} {
-    min-height: calc(#{$size} * 1%) !important;
+    min-height: calc(#{$size} * 1%);
   }
   .min-height-vh-#{$size} {
-    min-height: calc(#{$size} * 1vh) !important;
+    min-height: calc(#{$size} * 1vh);
   }
 
   .max-width-pct-#{$size} {
-    max-width: calc(#{$size} * 1%) !important;
+    max-width: calc(#{$size} * 1%);
   }
   .max-height-pct-#{$size} {
-    max-height: calc(#{$size} * 1%) !important;
+    max-height: calc(#{$size} * 1%);
   }
   .max-height-vh-#{$size} {
-    max-height: calc(#{$size} * 1vh) !important;
+    max-height: calc(#{$size} * 1vh);
   }
 }
