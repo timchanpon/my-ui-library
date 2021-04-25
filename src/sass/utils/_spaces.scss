@@ -1,0 +1,68 @@
+/*
+ * Margin
+ */
+.mx-auto {
+  margin: 0 auto;
+}
+.my-auto {
+  margin: auto 0;
+}
+
+@for $size from 0 through 20 {
+  .m-#{$size},
+  .mx-#{$size},
+  .ml-#{$size} {
+    margin-left: calc(#{$size} * 0.25rem);
+  }
+  .m-#{$size},
+  .mx-#{$size},
+  .mr-#{$size} {
+    margin-right: calc(#{$size} * 0.25rem);
+  }
+
+  .m-#{$size},
+  .my-#{$size},
+  .mt-#{$size} {
+    margin-top: calc(#{$size} * 0.25rem);
+  }
+  .m-#{$size},
+  .my-#{$size},
+  .mb-#{$size} {
+    margin-bottom: calc(#{$size} * 0.25rem);
+  }
+}
+
+
+/*
+ * Padding
+ */
+.px-auto {
+  padding: 0 auto;
+}
+.py-auto {
+  padding: auto 0;
+}
+
+@for $size from 0 through 20 {
+  .p-#{$size},
+  .px-#{$size},
+  .pl-#{$size} {
+    padding-left: calc(#{$size} * 0.25rem);
+  }
+  .p-#{$size},
+  .px-#{$size},
+  .pr-#{$size} {
+    padding-right: calc(#{$size} * 0.25rem);
+  }
+
+  .p-#{$size},
+  .py-#{$size},
+  .pt-#{$size} {
+    padding-top: calc(#{$size} * 0.25rem);
+  }
+  .p-#{$size},
+  .py-#{$size},
+  .pb-#{$size} {
+    padding-bottom: calc(#{$size} * 0.25rem);
+  }
+}

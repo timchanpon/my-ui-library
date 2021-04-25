@@ -5,12 +5,32 @@
   border: none;
 }
 
-.border-radius-pct-50 {
+.border-solid {
+  border-style: solid;
+}
+
+@for $size from 1 through 10 {
+  .border-px-#{$size} {
+    border-width: #{$size}px;
+  }
+}
+
+@each $key, $color in $colorPallete {
+  .border-#{$key} {
+    border-color: #{$color};
+  }
+}
+
+
+/*
+ * Border Radius
+ */
+.rounded-circle {
   border-radius: 50%;
 }
 
 @for $num from 0 through 50 {
-  .border-radius-px-#{$num} {
+  .rounded-px-#{$num} {
     border-radius: #{$num}px;
   }
 }
@@ -25,10 +45,10 @@
 
 
 /*
- * Background Color
+ * Opacity
  */
-@each $key, $color in $colorPallete {
-  .bg-color-#{$key} {
-    background-color: $color;
+@for $num from 1 through 10 {
+  .opacity-#{$num} {
+    opacity: calc(#{$num} * 0.1);
   }
 }

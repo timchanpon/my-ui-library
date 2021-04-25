@@ -11,42 +11,6 @@ $displayValues: block, flex, grid, none;
 
 
 /*
- * Flex
- */
-$alignItemsValues: start, center, end;
-$justifyContentValues: left, center, right, space-between, space-evenly;
-
-@each $val in $alignItemsValues {
-  .align-items-#{$val} {
-    align-items: $val;
-  }
-}
-
-@each $val in $justifyContentValues {
-  .justify-content-#{$val} {
-    justify-content: $val;
-  }
-}
-
-.flex-wrap-wrap {
-  flex-wrap: wrap;
-}
-
-.flex-direction-column {
-  flex-direction: column;
-}
-
-
-/*
- * Grid
- */
-.align-center-middle {
-  display: grid;
-  place-items: center;
-}
-
-
-/*
  * Overflow
  */
 $overflowValues: auto, hidden, scroll;
@@ -60,28 +24,5 @@ $overflowValues: auto, hidden, scroll;
   .overflow-#{$val},
   .overflow-y-#{$val} {
     overflow-y: $val;
-  }
-}
-
-
-/*
- * Images
- */
-$objectFitValues: contain, cover;
-
-@each $val in $objectFitValues {
-  .object-fit-#{$val} {
-    object-fit: $val;
-  }
-}
-
-
-/*
- * Center display with max-width
- */
-@for $size from 500 through 1500 {
-  .center-display-max-#{$size} {
-    margin: 0 auto;
-    max-width: #{$size}px;
   }
 }

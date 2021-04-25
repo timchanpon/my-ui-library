@@ -1,0 +1,18 @@
+/*
+ * Background Color
+ */
+@each $key, $color in $colorPallete {
+  .bg-#{$key} {
+    background-color: $color;
+  }
+}
+
+
+/*
+ * Text Color
+ */
+@each $key, $color in $colorPallete {
+  .color-#{$key} {
+    color: $color;
+  }
+}

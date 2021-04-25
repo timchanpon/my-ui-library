@@ -1,0 +1,22 @@
+// Variables
+@import './vars/colorPallete';
+@import './vars/config';
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a, button, i {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}

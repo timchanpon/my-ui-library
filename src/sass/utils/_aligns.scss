@@ -1,0 +1,36 @@
+/*
+ * Text Align
+ */
+$textAlignValues: left, center, right;
+
+@each $val in $textAlignValues {
+  .text-#{$val} {
+    text-align: $val;
+  }
+}
+
+.text-middle {
+  display: flex;
+  align-items: center;
+}
+
+
+/*
+ * Items Align
+ */
+.center-middle {
+  display: grid;
+  place-items: center;
+}
+
+
+/*
+ * Object Fit
+ */
+$objectFitValues: contain, cover;
+
+@each $val in $objectFitValues {
+  .object-fit-#{$val} {
+    object-fit: $val;
+  }
+}

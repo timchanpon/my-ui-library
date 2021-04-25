@@ -1,10 +1,10 @@
 /*
- * Position Types
+ * Position Type
  */
 $positionValues: absolute, fixed, relative, sticky;
 
 @each $val in $positionValues {
-  .position-#{$val} {
+  .#{$val} {
     position: $val;
   }
 }
@@ -14,23 +14,27 @@ $positionValues: absolute, fixed, relative, sticky;
  * Position
  */
 @for $num from 1 through 5 {
-  .z-index-#{$num} {
+  .z-#{$num} {
     z-index: $num;
+  }
+
+  .z-negative-#{$num} {
+    z-index: calc(#{$num} * -1);
   }
 }
 
 @for $num from 0 through 500 {
-  .top-px-#{$num} {
+  .t-px-#{$num} {
     top: #{$num}px;
   }
-  .bottom-px-#{$num} {
+  .b-px-#{$num} {
     bottom: #{$num}px;
   }
 
-  .left-px-#{$num} {
+  .l-px-#{$num} {
     left: #{$num}px;
   }
-  .right-px-#{$num} {
+  .r-px-#{$num} {
     right: #{$num}px;
   }
 }
